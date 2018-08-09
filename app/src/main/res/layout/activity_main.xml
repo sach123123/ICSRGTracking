@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.icsrgtracking.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="User Login"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:id="@+id/tv_userloginHead"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_username"
+            android:layout_below="@+id/tv_userloginHead"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/Text"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_UserName"
+                android:drawableLeft="@drawable/userlog"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="User Name"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_below="@+id/input_layout_username"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/Text"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Password"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/userpass"
+                android:drawablePadding="5dp"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textColor="#6b6b6c"
+            android:id="@+id/tv_ForgotPassword"
+            android:layout_below="@+id/input_layout_password"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whiterectangle"
+            android:text="Login"
+            android:id="@+id/tv_Login"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_ForgotPassword"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whiterectangle"
+            android:text="Sign up"
+            android:id="@+id/tv_SignUp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_Login"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

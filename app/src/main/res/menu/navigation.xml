@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_CurrentTrip"
+        android:icon="@drawable/current"
+        android:title="@string/title_CurrentTrip" />
+
+    <item
+        android:id="@+id/navigation_SavedTrip"
+        android:icon="@drawable/saved"
+        android:title="@string/title_SavedTrip" />
+
+    <item
+        android:id="@+id/navigation_ShareTrip"
+        android:icon="@drawable/shared"
+        android:title="@string/title_ShareTrip" />
+
+    <item
+        android:id="@+id/navigation_Settings"
+        android:icon="@drawable/settings"
+        android:title="@string/title_Settings" />
+
+
+</menu>
